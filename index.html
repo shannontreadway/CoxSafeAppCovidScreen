@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoxHealth COVID Screening</title>
+        <link rel="stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <h1>COVID-19 Self Assessment Form</h1>
+        <p>The following are health screening questions asked to everyone who wants to gain access to the premises.</p>
+
+        <h2>Have you tested positive for COVID in the last 14 days?</h2>
+        <select name = "covidPositive">
+            <option value =  "0">Please select:</option>
+            <option value = "1">No</option>
+            <option value = "2">Yes</option>
+        </select>
+
+
+        <h2>Do you have any one of the following new symptoms?</h2>
+        <ul>
+            <li>Fever</li>
+            <li>Cough</li>
+            <li>Shortness of breath or difficulty breathing</li>
+        </ul>
+        <select name = "covidPositive">
+            <option value =  "0">Please select:</option>
+            <option value = "1">No</option>
+            <option value = "2">Yes</option>
+        </select>
+
+
+        <h2>Do you have any two of the following?</h2>
+        <ul>
+            <li>New loss of taste or smell</li>
+            <li>Headache</li>
+            <li>Sore throat</li>
+            <li>Muscle or body aches</li>
+            <li>Chills or repeated shaking with chills</li>
+            <li>Congestion or runny nose</li>
+            <li>Nausea or vomiting</li>
+            <li>Diarrhea</li>
+        </ul>
+        <select name = "covidPositive">
+            <option value =  "0">Please select:</option>
+            <option value = "1">No</option>
+            <option value = "2">Yes</option>
+        </select>
+
+
+        <p>By completing this questionnaire, I affirm the answers I have provided above are accurate.  In addition, I agree to follow required safety precautions mandated by CoxHealth.  At a minimum, those include wearing a mask that covers my nose and mouth at all times while on any CoxHealth campus, unless I am alone in a private office safely distanced from others.  I also understand that I may be subject to disciplinary action, up to and including termination of employment, if I fail to follow the safety precautions mandated by CoxHealth.</p>
+
+        <div>
+            <label><input type="checkbox" name="iAttest"/></label>
+            <p>By checking this box and submitting this form, I am electronically signing this COVID -19 screening form.</p>
+        </div>
+
+        <button>Leave</button>
+
+        <button>Continue</button>
+
+
+
+    </body>
+</html>
+
+
+<!-- Error: Please select. All fields required. -->
+<!--Order: index > assessmentSubmitted > approved/notApproved > pass/fail-->
