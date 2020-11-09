@@ -1,0 +1,19 @@
+html {
+    background-color: whitesmoke;
+    color: blue;
+}
+
+#checkbox {
+    display: flex;
+}
+
+#fail {
+    font-size: 12em;
+    color: red;
+}
+
+#pass {
+    font-size: 12em;
+    color: forestgreen;
+}
+
