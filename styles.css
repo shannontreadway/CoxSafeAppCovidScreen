@@ -5,6 +5,11 @@ html {
 
 #checkbox {
     display: flex;
+    align-items:center;
+}
+
+#pCheckbox {
+    padding-left: 10px;
 }
 
 #fail {
@@ -13,5 +18,13 @@ html {
 
 #pass {
     max-width: 50%;
+}
+
+#iPass {
+    visibility: hidden;
+}
+
+#iFail {
+    visibility: hidden;
 }
 

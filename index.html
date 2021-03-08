@@ -3,62 +3,52 @@
     <head>
         <title>CoxHealth COVID Screening</title>
         <link rel="stylesheet" href = "styles.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
         <h1>COVID-19 Self Assessment Form</h1>
-        <p>The following are health screening questions asked to everyone who wants to gain access to the premises.</p>
+        <h2>The following are health screening questions asked to everyone who wants to gain access to the premises.</h2>
 
-        <h2>Have you tested positive for COVID in the last 14 days?</h2>
-        <select name = "covidPositive">
-            <option value =  "0">Please select:</option>
-            <option value = "1">No</option>
-            <option value = "2">Yes</option>
-        </select>
-
-
-        <h2>Do you have any one of the following new symptoms?</h2>
-        <ul>
-            <li>Fever</li>
-            <li>Cough</li>
-            <li>Shortness of breath or difficulty breathing</li>
-        </ul>
-        <select name = "covidPositive">
-            <option value =  "0">Please select:</option>
-            <option value = "1">No</option>
-            <option value = "2">Yes</option>
-        </select>
+        <form>
+            <h3>Have you or any of you close contacts tested positive for COVID in the last 14 days? Are you or any of your close contacts under waiting on results of a COVID test that was taken because of experiencing symptoms?</h3>
+            <select name="covidPositive" id="covidPositive">
+                <option value="0">Please select:</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select>
 
 
-        <h2>Do you have any two of the following?</h2>
-        <ul>
-            <li>New loss of taste or smell</li>
-            <li>Headache</li>
-            <li>Sore throat</li>
-            <li>Muscle or body aches</li>
-            <li>Chills or repeated shaking with chills</li>
-            <li>Congestion or runny nose</li>
-            <li>Nausea or vomiting</li>
-            <li>Diarrhea</li>
-        </ul>
-        <select name = "covidPositive">
-            <option value =  "0">Please select:</option>
-            <option value = "1">No</option>
-            <option value = "2">Yes</option>
-        </select>
+            <h3>Do you have any one of the following new symptoms?</h3>
+            <ul>
+                <li>Fever</li>
+                <li>Cough</li>
+                <li>Shortness of breath or difficulty breathing</li>
+                <li>New loss of taste or smell</li>
+                <li>Headache with a known COVID exposure</li>
+                <li>Sore throat</li>
+                <li>Muscle or body aches</li>
+                <li>Chills or repeated shaking with chills</li>
+                <li>Congestion or runny nose</li>
+                <li>Nausea or vomiting</li>
+                <li>Diarrhea</li>
+            </ul>
+            <select name="symptomCheck" id="symptomCheck">
+                <option value="0">Please select:</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select>
 
 
-        <p>By completing this questionnaire, I affirm the answers I have provided above are accurate.  In addition, I agree to follow required safety precautions mandated by CoxHealth.  At a minimum, those include wearing a mask that covers my nose and mouth at all times while on any CoxHealth campus, unless I am alone in a private office safely distanced from others.  I also understand that I may be subject to disciplinary action, up to and including termination of employment, if I fail to follow the safety precautions mandated by CoxHealth.</p>
+            <p>By completing this questionnaire, I affirm the answers I have provided above are accurate.  In addition, I agree to follow required safety precautions mandated by CoxHealth.  At a minimum, those include wearing a mask that covers my nose and mouth at all times while on any CoxHealth campus, unless I am alone in a private office safely distanced from others.  I also understand that I may be subject to disciplinary action, up to and including termination of employment, if I fail to follow the safety precautions mandated by CoxHealth.</p>
 
-        <div id="checkbox">
-            <label><input type="checkbox" name="iAttest"/></label>
-            <p>By checking this box and submitting this form, I am electronically signing this COVID -19 screening form.</p>
-        </div>
+            <div id="checkbox">
+                <label><input type="checkbox" name="iAttest" id="iAttest" required/></label>
+                <p id="pCheckbox">By checking this box and submitting this form, I am electronically signing this COVID-19 screening form.</p>
+            </div>
 
-        <button onclick="location.href='assessmentSubmitted.html'">Continue</button>
-
-
-
+            <a id="submitButton" href="#">Submit</a>
+        </form>
     </body>
 </html>
 
