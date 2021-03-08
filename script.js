@@ -38,9 +38,3 @@ window.addEventListener("load", function(){
         submitAssessment();
     });
 });
-
-// window.addEventListener("submit", function(event){
-    
-    //submitAssessment();
-//});
-

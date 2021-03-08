@@ -28,3 +28,6 @@ html {
     visibility: hidden;
 }
 
+#date {
+    font-weight: bolder;
+}
