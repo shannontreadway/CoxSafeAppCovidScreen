@@ -1,6 +1,7 @@
 html {
     background-color: whitesmoke;
     color: blue;
+    font-family: 'Monda', sans-serif;
 }
 
 #checkbox {
@@ -18,14 +19,6 @@ html {
 
 #pass {
     max-width: 50%;
-}
-
-#iPass {
-    visibility: hidden;
-}
-
-#iFail {
-    visibility: hidden;
 }
 
 #date {

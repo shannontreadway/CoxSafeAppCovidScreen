@@ -3,18 +3,17 @@ window.addEventListener("load", function(){
     let covidPositive = document.getElementById('covidPositive');
     let symptomCheck = document.getElementById('symptomCheck');
     let iAttest = document.getElementById('iAttest');
-    let submit = document.getElementById('submitButton');
-    let iPass = document.getElementById("iPass");
-    let iFail = document.getElementById("iFail");
+    let varContinue = document.getElementById('continue');
+    // let iPass = document.getElementById("iPass");
+    // let iFail = document.getElementById("iFail");
+    
 
-    submit.addEventListener("click", function() {
+    varContinue.addEventListener("click", function() {
+        let myLink = "";
         function submitAssessment() {
-            alert("This is a test");
-            event.preventDefault();
-            console.log("this works");
+            //event.preventDefault();
             console.log(covidPositive.value);
             console.log(symptomCheck.value);
-            console.log(iAttest.value);
             
             if (covidPositive.value === 0 || symptomCheck.value === 0){
                 alert("All fields are required.");
@@ -22,19 +21,18 @@ window.addEventListener("load", function(){
             };
             
             if (covidPositive.value === 2 || symptomCheck.value === 2){
-                iFail.style.visibility = 'visible';
-                submit.setAttribute("href", "fail.html");
-                //console.log(submit.href);
-                return;
+                //iFail.style.visibility = 'visible';
+                myLink = "fail.html";
+                return myLink;
             };
         
             if (covidPositive.value === 1 && symptomCheck.value === 1){
-                submit.href="pass.html";
-                return;
+                myLink = "pass.html";
+                return myLink;
             };
 
-            console.log(submit.href);
         };
-        submitAssessment();
+        console.log(submitAssessment());
+        //window.location.href = myLink;
     });
 });
