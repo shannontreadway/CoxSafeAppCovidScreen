@@ -1,38 +1,27 @@
 window.addEventListener("load", function(){
-    let form = document.querySelector('form')
-    let covidPositive = document.getElementById('covidPositive');
-    let symptomCheck = document.getElementById('symptomCheck');
-    let iAttest = document.getElementById('iAttest');
-    let varContinue = document.getElementById('continue');
-    // let iPass = document.getElementById("iPass");
-    // let iFail = document.getElementById("iFail");
-    
+    let covidPositiveElem = document.querySelector('#covidPositive');
+    let symptomCheckElem = document.querySelector('#symptomCheck');
+    let continueElem = document.querySelector('#continue');
 
-    varContinue.addEventListener("click", function() {
-        let myLink = "";
-        function submitAssessment() {
-            //event.preventDefault();
-            console.log(covidPositive.value);
-            console.log(symptomCheck.value);
-            
-            if (covidPositive.value === 0 || symptomCheck.value === 0){
+    continueElem.addEventListener("click", function() {
+        function submitAssessment(covidPositiveElem, symptomCheckElem) { 
+            //Ensure answers to both questions are either yes or no
+            if (covidPositiveElem.value === "choose" || symptomCheckElem.value === "choose"){
                 alert("All fields are required.");
-                return;
+                return "index.html";
             };
             
-            if (covidPositive.value === 2 || symptomCheck.value === 2){
-                //iFail.style.visibility = 'visible';
-                myLink = "fail.html";
-                return myLink;
+            //Check to see if answer to either question is yes; if so, they fail.
+            if (covidPositiveElem.value === "yes" || symptomCheckElem.value === "yes"){
+                return "fail.html";
             };
         
-            if (covidPositive.value === 1 && symptomCheck.value === 1){
-                myLink = "pass.html";
-                return myLink;
+            //Check to see if answers to both questions are no; if so, they pass.
+            if (covidPositiveElem.value === "no" && symptomCheckElem.value === "no"){
+                return "pass.html";
             };
-
         };
-        console.log(submitAssessment());
-        //window.location.href = myLink;
+        let myLink = (submitAssessment(covidPositiveElem, symptomCheckElem));
+        window.location.href = myLink;
     });
 });
