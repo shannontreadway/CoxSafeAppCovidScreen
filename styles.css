@@ -2,6 +2,7 @@ html {
     background-color: whitesmoke;
     color: blue;
     font-family: 'Monda', sans-serif;
+    margin: 15px 50px;
 }
 
 #checkbox {
@@ -15,10 +16,16 @@ html {
 
 #fail {
     max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #pass {
     max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #date {
