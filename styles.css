@@ -5,6 +5,12 @@ html {
     margin: 15px 50px;
 }
 
+.dropBox {
+    width: 150px;
+    height: 50px;
+    font-size: large;
+}
+
 #checkbox {
     display: flex;
     align-items:center;
@@ -30,4 +36,9 @@ html {
 
 #date {
     font-weight: bolder;
+}
+
+#iAttest {
+    width: 30px;
+    height: 30px;
 }
