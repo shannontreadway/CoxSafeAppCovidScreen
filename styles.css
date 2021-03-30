@@ -3,6 +3,7 @@ html {
     color: blue;
     font-family: 'Monda', sans-serif;
     margin: 30px 50px;
+    margin-bottom: 45px;
 }
 
 .dropBox {
@@ -44,4 +45,8 @@ html {
 #iAttest {
     width: 75px;
     height: 75px;
+}
+
+#continue {
+    font-weight: bold;
 }
