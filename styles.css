@@ -7,8 +7,11 @@ html {
 
 .dropBox {
     width: 200px;
-    height: 125px;
+    height: 100px;
     font-size: x-large;
+    background-color: blue;
+    color: whitesmoke;
+
 }
 
 #checkbox {
@@ -18,7 +21,7 @@ html {
 
 #pCheckbox {
     padding-left: 10px;
-    font-size: medium;
+    font-size: large;
 }
 
 #fail {
