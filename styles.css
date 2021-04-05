@@ -7,9 +7,6 @@ html {
 }
 
 .dropBox {
-    width: 400px;
-    height: 75px;
-    font-size: 55px;
     background-color: blue;
     color: whitesmoke;
 }
@@ -21,18 +18,17 @@ html {
 
 #pCheckbox {
     padding-left: 10px;
-    font-size: 2em;
 }
 
 #fail {
-    max-width: 50%;
+    max-width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 #pass {
-    max-width: 50%;
+    max-width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -42,12 +38,32 @@ html {
     font-weight: bolder;
 }
 
-#iAttest {
-    width: 75px;
-    height: 75px;
-}
-
 #continue {
     font-weight: bold;
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .dropBox {
+        width: 75%;
+        height: 75px;
+        font-size: 30px;
+    }
+    
+    #pCheckbox {
+        font-size: 1.5em;
+    }
+    
+    #date {
+        font-size: 1.5em;
+    }
+    
+    #iAttest {
+        width: 75px;
+        height: 75px;
+    }
+    
+    #continue {
+        font-size: 1.5em;
+    }
 }

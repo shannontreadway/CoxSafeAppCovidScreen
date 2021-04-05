@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Shannon's Redo of CoxHealth COVID Screening</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
         <link rel="stylesheet" href = "styles.css">
@@ -15,7 +16,7 @@
         <form>
             <h3>Have you or any of you close contacts tested positive for COVID in the last 14 days? Are you or any of your close contacts under waiting on results of a COVID test that was taken because of experiencing symptoms?</h3>
             <select name="covidPositive" id="covidPositive" class="dropBox">
-                <option value="choose">Please select:</option>
+                <option value="choose">Choose:</option>
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
             </select>
@@ -36,7 +37,7 @@
                 <li>Diarrhea</li>
             </ul>
             <select name="symptomCheck" id="symptomCheck" class="dropBox">
-                <option value="choose">Please select:</option>
+                <option value="choose">Choose:</option>
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
             </select>
@@ -45,8 +46,8 @@
             <p>By completing this questionnaire, I affirm the answers I have provided above are accurate.  In addition, I agree to follow required safety precautions mandated by CoxHealth.  At a minimum, those include wearing a mask that covers my nose and mouth at all times while on any CoxHealth campus, unless I am alone in a private office safely distanced from others.  I also understand that I may be subject to disciplinary action, up to and including termination of employment, if I fail to follow the safety precautions mandated by CoxHealth.</p>
 
             <div id="checkbox">
-                <label><input type="checkbox" name="iAttest" id="iAttest" required/></label>
-                <p id="pCheckbox">By checking this box and submitting this form, I am electronically signing this COVID-19 screening form.</p>
+                <input type="checkbox" name="iAttest" id="iAttest" required/>
+                <label for="iAttest" id="pCheckbox">By checking this box and submitting this form, I am electronically signing this COVID-19 screening form.</label>
             </div>
 
             <a id="continue" href="#">Continue</a>
