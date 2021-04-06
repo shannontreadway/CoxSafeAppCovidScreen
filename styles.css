@@ -46,8 +46,8 @@ html {
 @media screen and (max-width: 600px){
     .dropBox {
         width: 75%;
-        height: 75px;
-        font-size: 30px;
+        height: 50px;
+        font-size: 25px;
     }
     
     #pCheckbox {
