@@ -67,3 +67,9 @@ html {
         font-size: 1.5em;
     }
 }
+
+@media screen and (min-width: 700px) {
+    #fail {
+        max-width: 50%;
+    }
+}
