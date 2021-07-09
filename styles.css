@@ -1,14 +1,14 @@
 html {
-    background-color: whitesmoke;
-    color: blue;
+    background-color: #fff;
+    color: #1769a2;
     font-family: 'Monda', sans-serif;
     margin: 30px 50px;
     margin-bottom: 45px;
 }
 
 .dropBox {
-    background-color: blue;
-    color: whitesmoke;
+    background-color: #1769a2;
+    color: #fff;
 }
 
 #checkbox {
@@ -65,6 +65,7 @@ html {
     
     #continue {
         font-size: 1.5em;
+        color: #262626;
     }
 }
 
